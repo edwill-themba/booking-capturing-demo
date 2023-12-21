@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotel Booking System</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+</head>
+<body>
+ <div class="page">
+ 	<div class="panel panel-default">
+ 		<div class="panel-heading">
+ 			<h3 class="booking-heading">Welcome To Paradse</h3>
+ 		</div>
+ 	</div>
+ 	<div class="panel-body">
+ 	    <form action="pages/process.php" method="post" class="frm-book">
+ 	       <h6>enter your booking details</h6>
+ 		   <div class="form-group">
+ 			 <i class="fas fa-user"></i>
+ 			 <input type="text" name="name" class="form-input" placeholder="enter full your name" required>
+ 		   </div>
+ 		    <div class="form-group">
+ 			 <i class="fas fa-phone"></i>
+ 			 <input type="tel" name="phone" class="form-input" placeholder="enter telephone number" required>
+ 		   </div>
+ 		   <div class="form-group">
+ 			 <i class="fas fa-envelope"></i>
+ 			 <input type="email" name="email" class="form-input" placeholder="enter email address" required>
+ 		   </div>
+ 		    <div class="form-group">
+ 			 <i class="fas fa-home"></i>
+ 			 <select name="room_type" class="form-input" required>
+ 			 	<option value="">please select room type</option>
+ 			 	<option value="350">Normal 350 per day</option>
+ 			 	<option value="400">Garden View 400 per day</option>
+ 			 </select>
+ 		   </div>
+ 		   <div class="form-group">
+ 			 <i class="fas fa-calendar"></i>
+ 			 <input type="date" name="checkin" class="form-input-sm" required>
+ 			  <span>to</span><input type="date" name="checkout" class="form-input-sm" required>
+ 		   </div>
+ 		   <button class="btn btn-default btn" type="submit" name="submit">book now</button>
+ 		 </form>	
+ 	  </div>
+ 	</div>
+ </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>
